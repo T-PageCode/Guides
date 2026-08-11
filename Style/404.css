@@ -15,7 +15,7 @@ body{
 .text-toggle-class{
     transition: color 0.5s ease;
 }
-#cn-en-404{
+#cn-or-en-404{
     position: absolute;
     top: 38%;
     left: 50%;
@@ -69,7 +69,7 @@ body{
 #copyright:hover{
     color: rgb(194, 128, 255) !important;
 }
-#english{
+#english-chinese{
     position: absolute;
     top: 5%;
     left: 420px;
@@ -84,10 +84,10 @@ body{
     transition: background-color 0.5s ease,
     transform 0.5s ease;
 }
-#english:hover{
+#english-chinese:hover{
     background-color: rgb(185, 110, 255);
 }
-#english:active{
+#english-chinese:active{
     transform: translate(-50%,-50%) scale(0.8);
 }
 #return-to-home-page{

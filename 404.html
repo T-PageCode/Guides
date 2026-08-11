@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1 id="title-404">404 Not Found</h1>
-    <p id="cn-en-404" class="text-toggle-class">我们未找到您请求的资源</p>
+    <p id="cn-or-en-404" class="text-toggle-class">我们未找到您请求的资源</p>
     <button id="return-to-home-page">返回主页</button>
     <p id="copyright" class="text-toggle-class">&copy; 2026 T-PageCode, Dev.</p>
     <button id="english-chinese">English</button>
@@ -19,7 +19,7 @@
         function switchLanguage(isEnglish) {
             if (isEnglish) {
                 document.getElementById("page-title").innerText = "404 - T-PageCode Guides";
-                document.getElementById("cn-en-404").innerText = "We did not find the resource you requested";
+                document.getElementById("cn-or-en-404").innerText = "We did not find the resource you requested";
                 document.getElementById("return-to-home-page").innerText = "Return to Home Page";
                 document.getElementById("return-to-home-page").onclick = function() {
                     window.location.href = '../en/index.html';
@@ -31,7 +31,7 @@
             }
             else {
                 document.getElementById("page-title").innerText = "404 - T-PageCode Guides";
-                document.getElementById("cn-en-404").innerText = "我们未找到您请求的资源";
+                document.getElementById("cn-or-en-404").innerText = "我们未找到您请求的资源";
                 document.getElementById("return-to-home-page").innerText = "返回主页";
                 document.getElementById("return-to-home-page").onclick = function() {
                     window.location.href = './index.html';
