@@ -14,6 +14,10 @@
     <div id="toggle-thememode">
         <div id="toggle-button"></div>
     </div>
-    <script src="./Script/404.js"></script>
+    <script src="./Script/404.js">
+        if (window.location.pathname.includes('/en/')) {
+            window.location.href = "./en/404.html";
+        }
+    </script>
 </body>
 </html>
