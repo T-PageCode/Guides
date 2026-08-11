@@ -3,21 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./Style/404.css">
-    <title>404 - T-PageCode Guides</title>
+    <title id="page-title">404 - T-PageCode Guides</title>
 </head>
 <body>
     <h1 id="title-404">404 Not Found</h1>
-    <p id="cn-404" class="text-toggle-class">我们未找到您请求的资源</p>
-    <button id="return-to-home-page" onclick="window.location.href='./index.html'">返回主页</button>
+    <p id="cn-en-404" class="text-toggle-class">我们未找到您请求的资源</p>
+    <button id="return-to-home-page">返回主页</button>
     <p id="copyright" class="text-toggle-class">&copy; 2026 T-PageCode, Dev.</p>
-    <button id="english" onclick="window.location.href='./en/404.html'">English</button>
+    <button id="english-chinese">English</button>
     <div id="toggle-thememode">
         <div id="toggle-button"></div>
     </div>
     <script src="./Script/404.js"></script>
     <script>
-    if (window.location.pathname.includes('/en/') && !window.location.pathname.endsWith('/404.html')) {
-            window.location.href = './404.html';
+        function switchLanguage(isEnglish) {
+            if (isEnglish) {
+                document.getElementById("page-title").innerText = "404 - T-PageCode Guides";
+                document.getElementById("cn-en-404").innerText = "We did not find the resource you requested";
+                document.getElementById("return-to-home-page").innerText = "Return to Home Page";
+                document.getElementById("return-to-home-page").onclick = function() {
+                    window.location.href = './en/index.html';
+                };
+                document.getElementById("english-chinese").innerText = "简体中文";
+                document.getElementById("english-chinese").onclick = function() {
+                    switchLanguage(false);
+                };
+            }
+            else {
+                document.getElementById("page-title").innerText = "404 - T-PageCode Guides";
+                document.getElementById("cn-en-404").innerText = "我们未找到您请求的资源";
+                document.getElementById("return-to-home-page").innerText = "返回主页";
+                document.getElementById("return-to-home-page").onclick = function() {
+                    window.location.href = './index.html';
+                };
+                document.getElementById("english-chinese").innerText = "English";
+                document.getElementById("english-chinese").onclick = function() {
+                    switchLanguage(true);
+                };
+            }
+        }
+        if (window.location.pathname.includes('/en/')) {
+            switchLanguage(true);
+        }
+        else {
+            switchLanguage(false);
         }
     </script>
 </body>

@@ -80,7 +80,7 @@ body{
 #copyright:hover{
     color: rgb(194, 128, 255) !important;
 }
-#chinese{
+#english-chinese{
     position: absolute;
     top: 5%;
     left: 420px;
@@ -95,10 +95,10 @@ body{
     transition: background-color 0.5s ease,
     transform 0.5s ease;
 }
-#chinese:hover{
+#english-chinese:hover{
     background-color: rgb(185, 110, 255);
 }
-#chinese:active{
+#english-chinese:active{
     transform: translate(-50%,-50%) scale(0.8);
 }
 #return-to-home-page{
