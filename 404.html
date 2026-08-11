@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./Style/404.css">
-    <base href="/Guides/">
     <title id="page-title">404 - T-PageCode Guides</title>
 </head>
 <body>
@@ -22,6 +21,7 @@
                 document.getElementById("page-title").innerText = "404 - T-PageCode Guides";
                 document.getElementById("cn-or-en-404").innerText = "We did not find the resource you requested";
                 document.getElementById("return-to-home-page").innerText = "Return to Home Page";
+                document.getElementById("return-to-home-page").style.width = "200px";
                 document.getElementById("return-to-home-page").onclick = function() {
                     window.location.href = '../en/index.html';
                 };
@@ -34,6 +34,7 @@
                 document.getElementById("page-title").innerText = "404 - T-PageCode Guides";
                 document.getElementById("cn-or-en-404").innerText = "我们未找到您请求的资源";
                 document.getElementById("return-to-home-page").innerText = "返回主页";
+                document.getElementById("return-to-home-page").style.width = "150px";
                 document.getElementById("return-to-home-page").onclick = function() {
                     window.location.href = './index.html';
                 };
