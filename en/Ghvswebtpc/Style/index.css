@@ -1,0 +1,139 @@
+body{
+    user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255,255,255);
+    transition: background-color 0.5s ease;
+}
+*{
+    font-weight: 200;
+}
+.leftbar-hover-active{
+    width: 90%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease,
+    color 0.5s ease;
+    border-radius: 12.5px;
+}
+.leftbar-hover-active:hover{
+    color: rgb(194, 128, 255) !important;
+}
+.leftbar-hover-active:active{
+    background-color: rgb(219, 191, 255);
+}
+#explain-for-this-page{
+    position: absolute;
+    top: 300px;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+}
+#theme-toggle-button-explain{
+    position: absolute;
+    top: 380px;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+#left-bar{
+    position: absolute;
+    top: 50%;
+    margin-left: 200px;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 700px;
+    background-color: rgb(235,235,235);
+    border-radius: 35px;
+    transition: background-color 0.5s ease;
+}
+#toggle-thememode{
+    position: absolute;
+    top: 5%;
+    left: 250px;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 51px;
+    background-color: rgb(219, 191, 255);
+    border-radius: 35px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+#toggle-button{
+    position: absolute;
+    left: 17%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: left 0.5s ease;
+}
+#toggle-thememode.toggle-theme-go #toggle-button{
+    left: 83%;
+}
+#title-text1{
+    position: absolute;
+    margin-top: 250px;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    transition: transform 0.5s ease;
+    color: rgb(194, 128, 255);
+    white-space: nowrap;
+}
+#copyright{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: 200;
+}
+#copyright:hover{
+    color: rgb(194, 128, 255) !important;
+}
+#chinese{
+    position: absolute;
+    top: 5%;
+    left: 420px;
+    transform: translate(-50%,-50%) scale(1);
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(218, 124, 255);
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.5s ease,
+    transform 0.5s ease;
+}
+#chinese:hover{
+    background-color: rgb(185, 110, 255);
+}
+#chinese:active{
+    transform: translate(-50%,-50%) scale(0.8);
+}
+#t-pagecode-guides{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    white-space: nowrap;
+}
+#ghvswebtpc{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    white-space: nowrap;
+}
