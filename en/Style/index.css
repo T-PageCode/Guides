@@ -27,6 +27,7 @@ body{
 }
 .leftbar-hover-active:active{
     background-color: rgb(219, 191, 255);
+    color: rgb(194, 128, 255) !important;
 }
 #explain-for-this-page{
     position: absolute;
