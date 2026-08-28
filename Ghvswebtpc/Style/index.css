@@ -19,14 +19,15 @@ body{
     justify-content: center;
     align-items: center;
     transition: background-color 0.5s ease,
-    color 0.5s ease;
+    color 0.5s ease !important;
     border-radius: 12.5px;
 }
 .leftbar-hover-active:hover{
     color: rgb(194, 128, 255) !important;
 }
-.leftbar-hover-active:active{
-    background-color: rgb(219, 191, 255);
+.leftbar-hover-active:active {
+    background-color: rgb(219, 191, 255) !important;
+    color: rgb(194, 128, 255) !important;
 }
 #explain-for-this-page{
     position: absolute;
@@ -41,6 +42,9 @@ body{
     left: 60%;
     transform: translate(-50%,-50%);
     font-size: 20px;
+}
+.text-toggle-class{
+    transition: color 0.5s ease;
 }
 #left-bar{
     position: absolute;
